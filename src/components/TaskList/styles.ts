@@ -69,6 +69,11 @@ export const DeleteButton = styled.button`
   background: none;
   color: ${(props) => props.theme['gray-300']};
   cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: ${(props) => props.theme.red};
+  }
 `
 
 const ToggleButtonBase = styled.button`
@@ -80,6 +85,11 @@ const ToggleButtonBase = styled.button`
   cursor: pointer;
   width: 1rem;
   height: 1rem;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `
 
 export const ToggleButtonIncomplete = styled(ToggleButtonBase)`

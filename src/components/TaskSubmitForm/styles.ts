@@ -26,10 +26,10 @@ export const FormContainer = styled.form`
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 140%;
-    transition: filter 0.2s;
+    transition: background 0.2s;
 
     &:hover {
-      filter: brightness(0.9);
+      background: ${(props) => props.theme.blue};
     }
   }
 `
